@@ -1,0 +1,540 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none!important;
+    list-style: none!important;
+    outline: none!important;
+    border: none!important;
+    box-shadow: none!important;
+    font-family: 'Poppins', sans-serif;
+}
+.preloader {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #efefef;
+    z-index: 100;
+}
+.preloader .loader {
+    width: 100px;
+    height: 100px;
+    border: 20px dotted #74ce0e!important;
+    border-radius: 50%;
+    animation: loader 2s linear infinite;
+}
+@keyframes loader {
+    0% {
+        transform: rotate(0turn);
+    }
+    100% {
+        transform: rotate(1turn);
+    }
+}
+.fade-out-animation {
+    opacity: 0;
+    visibility: hidden;
+    /* display: none; */
+}
+.get-help {
+    position: fixed;
+    left: -4%;
+    top: 40%;
+}
+.get-help .help .btn {
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    transform: rotate(270deg);
+    font-size: 15px;
+}
+.get-help .help .btn i {
+    padding: 5px;
+}
+.box-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    background: url('../img/bg\ 3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+}
+.filetransferbox {
+    width: 1000px;
+    height: auto;
+    max-width: 100%;
+    background: #ffffffd3;
+    margin: 30px auto;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2)!important;
+}
+.filetransferbox .filetransferheader {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+    background: #cccccc75;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.filetransferbox .filetransferheader .logo {
+    display: flex;
+    margin: 5px;
+}
+.filetransferbox .filetransferheader .logo img {
+    width: 50px;
+    height: 45px;
+}
+.filetransferbox .filetransferheader .logo h2 {
+    padding-top: 8px;
+}
+.filetransferbox .filetransferheader .logo h2 a {
+    color: #000;
+}
+.filetransferbox .filetransferheader nav {
+    display: flex;
+    justify-content: space-around;
+    margin: 5px;
+    font-weight: bold;
+}
+.filetransferbox .filetransferheader nav a {
+    padding: 13px 10px;
+    color: #74ce0e;
+    text-decoration: underline!important;
+    /* border-right: 1px solid #b3a6a6!important; */
+}
+.filetransferbox .filetransferheader nav a:first-child {
+    border-right: 0.2px solid #b3a6a6!important;
+}
+.filetransferbox .filetransferheader nav a span {
+    background: #74ce0e;
+    color: #fff;
+    padding: 8px;
+    margin-left: 5px;
+    border-radius: 20px;
+    /* text-decoration: underline!important; */
+}
+.filetransferbox .filetransferheader nav a.active {
+    font-size: 18px;
+    color: #302e2e;
+    padding: 13px 10px;
+    text-decoration: none!important;
+}
+.filetransferbox .filetransferheader nav a:last-child {
+    padding-left: 30px;
+}
+.filetransferbox .filetransferheader .profile {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+    font-weight: bold;
+}
+.filetransferbox .filetransferheader .profile .login {
+    display: flex;
+}
+.filetransferbox .filetransferheader .profile .login .icon {
+    margin: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #74ce0e!important;
+    text-align: center;
+}
+.filetransferbox .filetransferheader .profile .login .icon i {
+    padding: 3px;
+    color: #74ce0e;
+}
+.filetransferbox .filetransferheader .profile .login span {
+    padding: 8px;
+    padding-left: 20px;
+    color: #74ce0e;
+    text-decoration: underline!important;
+}
+.filetransferbox .filetransferheader .profile .login.active .icon {
+    border: 2px solid #302e2e!important;
+}
+.filetransferbox .filetransferheader .profile .login.active .icon i {
+    color: #302e2e!important;
+}
+.filetransferbox .filetransferheader .profile .login.active span {
+    color: #302e2e!important;
+    text-decoration: none!important;
+}
+.filetransferbox .filetransferheader .profile .menu-btn {
+    display: none;
+}
+.filetransferbox .filetransferheader .profile .menu-btn .icon {
+    margin: 5px;
+    margin-right: 10px;
+    /* width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #74ce0e!important; */
+    text-align: center;
+}
+.filetransferbox .filetransferheader .profile .menu-btn .icon i {
+    padding: 5px;
+    color: #74ce0e;
+    font-size: 20px;
+}
+.filetransferbox .filetransferheader .profile .menu-btn a {
+    padding: 8px;
+    color: #74ce0e;
+    text-decoration: underline!important;
+}
+.filetransferbox .content-box {
+    width: 100%;
+    /* height: inherit; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto;
+}
+.filetransferbox .content-box .content-details h2 {
+    font-size: 70px;
+    word-wrap: wrap;
+    text-align: center;
+    padding: 20px;
+}
+.filetransferbox .content-box .content-details .btn {
+    margin: 20px auto;
+    background: #82e70d;
+    padding: 10px;
+    font-size: 18px;
+    color: #fff;
+}
+.form-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px auto;
+}
+.form-container form {
+    width: 400px;
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+}
+.form-container form .logo {
+    margin: 10px;
+    margin-bottom: 40px;
+}
+.form-container form .logo h2 {
+    text-align: center;
+    color: #1f1c1c;
+}
+.form-container form input {
+    width: 100%;
+    padding: 10px;
+    background: #efefef;
+    font-size: 18px;
+    border: 0.2px solid #36303059!important;
+    box-shadow: 0.5px 0.8px 1px #55555585!important;
+}
+.form-container form input:focus {
+    border-left: 2px solid #74ce0e!important;
+    border-bottom: 2px solid #74ce0e!important;
+    background: #fff;
+}
+.form-container form input[type="password"] {
+    width: 100%;
+    /* margin-top: 0px; */
+}
+.form-container form i {
+    position: absolute;
+    font-size: 20px;
+    color: grey;
+    cursor:  pointer;
+    margin: 13px 0 0  -45px;
+}
+.form-container form input[type="checkbox"] {
+    width: auto;
+    text-align: left!important;
+    border: none!important;
+    box-shadow: none!important;
+    padding-top: 10px;
+}
+.form-container form label {
+    padding-top: 10px;
+}
+.form-container form label a {
+    color: #74ce0e;
+    text-decoration: underline!important;
+}
+.form-container form .btn {
+    margin-top: 20px;
+    background: #74ce0e!important;
+    border: none!important;
+    box-shadow: none!important;
+    color: #efefef!important;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.form-container form .other-link {
+    margin-top: 10px;
+    color: #74ce0e;
+    text-align: center;
+}
+.form-container form .other-link a {
+    color: #74ce0e;
+    font-weight: bold;
+    text-decoration: underline!important;
+    text-align: center;
+}
+.sent-container {
+    margin: 100px auto;
+}
+
+.sent-container .sent {
+    border-top: 1px solid #ccc!important;
+    padding: 10px;
+}
+.sent-container .logo {
+    margin-left: 20px;
+}
+.sent-container .logo h2 {
+    font-size: 30px;
+    padding-left: 30px;
+}
+.sent-container .sent .sent-box {
+    width: 90%;
+    max-width: 100%;
+    height: 300px;
+    padding: 10px;
+    border: 1px solid #ccc!important;
+    box-shadow: 2px 1px 1px #efefef!important;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sent-container .sent .sent-box .sent-box-detail h2 {
+    font-size: 18px;
+    color: #555;
+} 
+.sent-container .sent .sent-box .btn {
+    margin: 10px auto;
+    background: #82e70d;
+    padding: 10px;
+    font-size: 18px;
+    color: #fff;
+}
+.container {
+    margin: 100px auto;
+}
+.container .logo {
+    margin: 10px;
+    text-align: center;
+}
+.container .logo h2 {
+    font-size: 40px;
+}
+.container .contact {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .contact form {
+    width: 90%;
+    max-width: 100%;
+    border: 1px solid #ccc!important;
+    padding: 20px;
+    margin: 20px auto;
+}
+.container .contact form .box {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px auto;
+}
+.container .contact form .box label {
+    font-size: 20px;
+    padding: 10px;
+    color: #555;
+    text-align: left;
+}
+.container .contact form .box input {
+    width: 50%;
+    max-width: 100%;
+    padding: 20px;
+    margin-top: 5px;
+    border: 1px solid #ccc!important;
+    box-shadow: 2px 1px 1px #efefef!important;
+}
+.container .contact form .box input:focus,
+.container .contact form .box select:focus,
+.container .contact form .box textarea:focus {
+    border-left: 2px solid #74ce0e!important;
+    border-bottom: 2px solid #74ce0e!important;
+}
+.container .contact form .box select {
+    width: 50%;
+    max-width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc!important;
+    border-radius: 5px;
+    box-shadow: 2px 1px 1px #efefef!important;
+    color: #555;
+}
+.container .contact form .box textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 20px;
+    border: 1px solid #ccc!important;
+    box-shadow: 2px 1px 1px #efefef!important;
+    resize: none;
+}
+.container .contact form .box .form-label {
+    text-align: start;
+}
+.container .contact form .btn {
+    display: block;
+    margin: 10px auto;
+    background: #82e70d;
+    padding: 10px;
+    font-size: 15px;
+    color: #fff;
+}
+footer {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    background: #efefef;
+}
+footer .container p {
+    color: #807c7c;
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+}
+footer .container p a {
+    color: #807c7c;
+    text-decoration: underline!important;
+}
+@media (max-width: 1220px) {
+    .get-help {
+        position: fixed;
+        left: -4.5%;
+        top: 40%;
+    }
+}
+@media (max-width: 1104px) {
+    .get-help {
+        display: none;
+    }
+}
+@media (max-width: 872px) {
+    .filetransferbox .filetransferheader .profile .menu-btn {
+        display: flex;
+    }
+    .filetransferbox .filetransferheader .profile a {
+        padding-left: 10px;;
+    }
+    .filetransferbox .filetransferheader nav a:first-child {
+        border-right: none!important;
+    }
+    .filetransferbox .filetransferheader nav {
+        position: absolute;
+        top:99%; left:0; right:0;
+        /* border-top: 1px solid #333!important; */
+        display: block;
+        background-color: #fff;
+        transition: .2s linear;
+        padding: 0;
+        margin: 0;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+     }
+  
+     .filetransferbox .filetransferheader nav.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+     }
+  
+     .filetransferbox .filetransferheader nav h6,
+     .filetransferbox .filetransferheader nav a{
+        width: 100%;
+        display: block;
+        text-align: right;
+        border-bottom: 0.1px solid #555!important;
+     }
+}
+@media (max-width: 700px) {
+    .container .contact form input {
+        width: 100%;
+    }
+    .container .contact form select {
+        width: 100%;
+        padding: 5px;
+    }
+    .container .contact form textarea {
+        margin: 5px;
+    }
+}
+@media (max-width: 600px) {
+    .filetransferbox .content-box .content-details h2 {
+        font-size: 60px;
+    }
+}
+@media (max-width: 660px) {
+    .filetransferbox .filetransferheader .profile .login a {
+        padding: 8px;
+        padding-left: 0px;
+    }
+    .filetransferbox .filetransferheader .profile .menu-btn .icon {
+        margin: 5px;
+        margin-right: 0px;
+        text-align: center;
+    }
+    .filetransferbox .filetransferheader .profile .menu-btn .icon {
+        margin: 5px;
+        margin-right: 0px;
+    }
+}
+@media (max-width: 500px) {
+    .filetransferbox {
+        width: 100%;
+        height: auto;
+        padding: 0px;
+        margin: 0px;
+    }
+    .filetransferbox .filetransferheader .profile .menu-btn a {
+        display: none;
+    }
+    .filetransferbox .filetransferheader .profile .login span {
+        display: none;
+    }
+    .sent-container .logo {
+        text-align: center;
+        margin-left: 0px;
+    }
+    .sent-container .logo h2 {
+        font-size: 30px;
+        padding-left: 20px;
+        padding-bottom: 30px;
+        font-weight: bold;
+        padding-left: 0px;
+    }
+    .filetransferbox .content-box .content-details h2 {
+        font-size: 50px;
+    }
+}
+@media (max-width: 470px) {
+    .filetransferbox .filetransferheader .logo img {
+        width: 40px;
+        height: 40px;
+    }
+}
+@media (max-width: 432px) {
+    .filetransferbox .filetransferheader .logo img {
+        width: 40px;
+        height: 40px;
+    }
+    .filetransferbox .filetransferheader .logo h2 {
+        font-size: 25px;
+    }
+}
